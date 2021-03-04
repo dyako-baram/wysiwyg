@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Rich text editor";
+}
+<h1>@ViewData["Title"]</h1>
+<form asp-action="SingleFile" asp-controller="Home" method="post">
+        <textarea name="content" id="editor">
+            &lt;p&gt;This is some sample content.&lt;/p&gt;
+        </textarea>
+        <p><input type="submit"  value="Submit" class="btn mt-3 btn-outline-info"></p>
+</form>
+
+
+
+@section ScriptsHead{
+
+  <script src="~/js/ckeditor.js"></script>
+}

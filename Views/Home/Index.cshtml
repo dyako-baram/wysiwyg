@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+@foreach (var item in ViewBag.Contetnt)
+{
+    <div>
+        @Html.Raw(item);
+    </div>
+}
+
